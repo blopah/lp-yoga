@@ -1,0 +1,18 @@
+.promo {
+    padding: 40px 20px;
+    background-color: #61dca2;
+    color: #ffffff;
+    text-align: center;
+}
+.promo h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.promo-button {
+    text-decoration: none;
+    background-color: #ffffffe7;
+    color: #61dca2;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}

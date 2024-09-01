@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  background-color: transparent; /* Define o fundo como transparente */
+  position: relative;
+  z-index: 1; /* Certifique-se de que o conteúdo tem z-index maior que o vídeo */
+  padding: 20px; /* Ajuste conforme necessário para espaçamento */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Estilos globais */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  color: #333;
+  height: 100%;
+  overflow-x: hidden; /* Permite rolagem vertical */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); /* Aplica o filtro preto e branco */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da tela */
+  overflow-y: auto; /* Permite rolagem vertical */
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da tela */
+  overflow: hidden;
 }

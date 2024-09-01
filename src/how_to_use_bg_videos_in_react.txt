@@ -1,0 +1,75 @@
+hey what's up guys in this video i'm going to show  you how to create a full screen video background  
+and react.js and we're also going to throw an  overlay on top of it in case you want to layer  
+some text let's dive in so this is what we're  going to be building right here i'm going to close  
+this down and we're going to be in vs code here  and basically this is just a react.js application  
+that i just ran create react app in the command  line and then i've deleted all the extra files  
+so here we are just a didn't that app.js so  what i'm going to do i'm going to delete this  
+and first things to do i'm going to create a  couple folders here just an assets folder and  
+also a component components folder now you don't  have to do this i'm just trying to keep things a  
+best practice way so in this assets right here  this folder i'm going to drag in my video that  
+we're going to be using and it is the video  bg.mp4 so i'm just going to set that in the re  
+assets folder there and then in the components  folder i'm going to create a new component i'm  
+going to call it main.jsx and i'm going to  generate a functional component here in this  
+video it doesn't matter functional component class  based components does not matter for this tutorial  
+so let's go ahead and import that in app.js so  i'm going to call main now go ahead and import  
+that there there we go now whenever we type here  we should now see that on the screen there it is  
+so what we want to do is in order to have access  to this video we need to import it and the way we  
+import videos or images in react is we go here  to the top we're just going to import and then  
+we can name our file i'm going to name it video  bg you can name it whatever you'd like from and  
+then we've got to go find our file path here  so we're in the components folder we need to  
+get out of this folder so it's going to be two  dots then go into the assets folder it's going  
+to be video bg.mp4 now we have access to grab  our video so for this outer div i'm just going  
+to give this a class name of main then in here  we're going to list out our video element okay  
+so this is going to be a video then we need a  source and then we can go ahead and just close  
+this now instead of the quotes and react we use  curly brackets here so and in here we should put  
+the name of our file that we named it and we named  it video bg there we go so we should refresh now  
+we see the video on our screen only uh problem is  it's not displaying properly and it's not playing  
+so the way we fix this here we need to add some  properties to our video element so we can add the  
+auto play we can add the loop and we can even add  muted even though there's no sound in here so now  
+if we if we refresh air we should now see our our  video here starting to take form now we can our  
+video is actually playing but we want this to take  up just the full width and height of the screen  
+and right now it's overlapping we can't really  see the video so let's go in and add some css  
+here so i'm just going to go into index.css and  i'm just going to kind of remove all this i'm just  
+going to add a custom few things margin 0 we'll  do padding 0 and then let's add a font family  
+let's do let's do impact it's pretty cool and  this is within react so you have access to  
+this font within react so let's first grab our  our outer div here which is uh which is main  
+we need to specify the width and also the height  of 100 or 100 viewport heights now for our video  
+we did not give the video element a class name so  we can just grab it by the element which is video  
+and let's give this a width of 100 we'll give  it a height of 100 and now we can do object  
+fit and right now the object fit is set to contain  which is pretty nice but what i want to do is  
+object cover because i want it to take up the full  width and height of the screen perfect so now as  
+you can see when we scroll when we scroll around  our browser here it just stays within our browser  
+um if you want to do back to contain that's fine  as well and if you do that you probably want to  
+change the take away the height there so just  something to keep in mind so i'm going to change  
+this back to 100 and object cover now let's add  some text to our um let's add some text to our  
+video here just a little text right there in the  middle here so i'm going to go back into main.js  
+and i'm going to type a div for the class name  of content and then here i'll have an h1 that  
+says welcome and then a p tag i'll say to my site  okay so we can't see that now it's actually hidden  
+behind this video in the upper corner here  so that div name is content so let's go ahead  
+and grab that content now we want to position this  absolute and we'll say we'll say see width 100  
+height 100 say top zero now let's uh display  this as flex and then so there it is at the  
+top now you see it now let's do flex direction  we'll do column and let's put this right in  
+the middle so we're gonna do justify content  center then align items to the center as well  
+and i'm gonna make this text so i've been using  tailwind so that's where that came from text white  
+there we go so that looks perfect that's what we  want now that's how we display uh full width video  
+and react.js but what we want to do see this text  is kind of hard to read it'd be really nice if we  
+could put a nice overlay behind it so we can  the text will pop out a little bit so let's do  
+that right now let's go back into our main.jsx  we can actually close those so what we want to  
+do we want to add a div here it doesn't really  matter where i'm going to add it at the top just  
+below our video here so we'll have a div and i'm  just going to name that give it a class name of  
+overlay so you can name it whatever you like  i'm going to name it overlay so now in here  
+let's grab the overlay and we want to position  this absolute and then we'll say top 0  
+left 0 width we want to take up 100 height 100  and this is of the parent container okay you guys  
+and then we also want to give this a color now  i'm going to use rgba for the background color  
+we'll say rgba and that takes  in a few values four values  
+for black it's all zeros there and then the last  element is the alpha and we can kind of define the  
+the how see-through our our color is here and i'm  gonna say 0.5 so if we go up to 0.9 it's going to  
+be a lot darker notice you can barely see through  if you go down to 0.1 it's almost like it's not  
+even there so i'm going to leave it around 0.4  now another way to do this if you're using the hex  
+code here you can go down and say background color  for black is all zeros and then what you can do  
+is add just cc at the end and now you  can see it gives it an overlay look so  
+but i'm going to use i'm going to use the rgba  because it's a little bit easier to customize here  
+and that is what we want right there you  guys that's how we display a full width video  
+background in react.js and we added a nice overlay  so our text really pops out thanks for watching  
+you guys i hope you liked it smash the like button  and i'll be putting out some more content just  
+like this and react here in a few days so thanks  for watching you guys i'll see you on the next one

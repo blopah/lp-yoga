@@ -1,0 +1,29 @@
+.benefits {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffffe7;
+}
+.benefits h2 {
+    margin-bottom: 30px;
+    color: #032841;
+}
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5%;
+    flex-wrap: wrap;
+}
+.benefit-item {
+    width: 300px;
+    text-align: center;
+}
+.benefit-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #ffffffe7; /* Cor default do placeholder */
+    border-radius: 10px;
+}
+.benefit-item p {
+    margin-top: 15px;
+    font-size: 16px;
+}
