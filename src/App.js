@@ -13,7 +13,7 @@ function App() {
       <Benefits />
       <Promo />
       <Testimonials />
-      {/* <SignupForm /> */}
+      <SignupForm />
     </div>
   );
 }
