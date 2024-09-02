@@ -11,6 +11,7 @@
     padding: 15px;
     width: 80%;
     max-width: 400px;
+    min-width: 270px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -35,7 +36,6 @@ form[name="contact"] {
 form[name="contact"] p label {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    width: 51%;
 }
 
 form[name="contact"] p {
@@ -53,16 +53,14 @@ form[name="contact"] p {
         padding: 50px 40px;
     }
 
+    form[name="contact"] p label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        width: 51%;
+    }
+
     form[name="contact"] {
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    form[name="contact"] p {
-        width: 48%;
-    }
-
-    form[name="contact"] p:nth-child(odd) {
-        margin-right: 4%;
     }
 }
