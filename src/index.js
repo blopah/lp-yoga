@@ -12,6 +12,7 @@ root.render(
     <section className="signup-form" id="signup">
             <h2>Garanta Sua Aula Grátis</h2>
             <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact"/>
                 <p>
                     <label><input type="text" name="nome" placeholder="Nome" required /></label>
                 </p>
